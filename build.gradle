@@ -53,7 +53,6 @@ java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(Integer.parseInt(project.java_version))
     }
-    withSourcesJar()
 }
 
 jar {
