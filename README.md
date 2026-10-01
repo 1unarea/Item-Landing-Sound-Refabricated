@@ -3,8 +3,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Minecraft: 26.3](https://img.shields.io/badge/Minecraft-26.3-brightgreen.svg)]()
 [![Fabric: API](https://img.shields.io/badge/Fabric-0.161.0%2B26.3-blue.svg)]()
-[![CurseForge: 1721457](https://img.shields.io/badge/1721457-orange.svg)](https://www.curseforge.com/minecraft/mc-mods/item-landing-sound-refabricated/preview)
-[![Modrinth: wfdflqrM](https://img.shields.io/badge/wfdflqrM-blue.svg)](https://modrinth.com/mod/item-landing-sound-refabricated)
+[![CurseForge: 1721457](https://img.shields.io/badge/CurseForge-1721457-orange.svg)](https://www.curseforge.com/minecraft/mc-mods/item-landing-sound-refabricated/preview)
+[![Modrinth: wfdflqrM](https://img.shields.io/badge/Modrinth-wfdflqrM-blue.svg)](https://modrinth.com/mod/item-landing-sound-refabricated)
 
 Item Landing Sound Refabricated is a client-side Fabric mod for Minecraft 26.3 that plays realistic, block-specific impact sounds whenever dropped items land on physical surfaces.
 
