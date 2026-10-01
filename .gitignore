@@ -1,0 +1,42 @@
+# Gradle & Build Output
+.gradle/
+build/
+out/
+bin/
+
+# Fabric Loom Run & Cache Directories
+run/
+.run/
+.loom/
+.fabric/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Log and Crash Files
+*.log
+logs/
+crash-reports/
+
+# Temporary / Scratch Files
+*.tmp
+*.bak
+
+# Agent Metadata & Workspace
+.agents/

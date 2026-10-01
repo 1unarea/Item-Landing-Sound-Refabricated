@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "item_landing_sound_refabricated",
+  "version": "${version}",
+  "name": "Item Landing Sound Refabricated",
+  "description": "Client-side Fabric mod for Minecraft 26.3 playing realistic block-based impact sounds when items hit the ground, featuring instant collision detection and zero memory leaks.",
+  "authors": [
+    "ExiledLizard635",
+    "Refabricated Contributors"
+  ],
+  "contact": {
+    "homepage": "https://github.com/aegeada/Item-Landing-Sound-Refabricated",
+    "sources": "https://github.com/aegeada/Item-Landing-Sound-Refabricated"
+  },
+  "license": "MIT",
+  "icon": "assets/item_landing_sound_refabricated/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "org.refabricated.itemlandingsound.ItemLandingSoundClient"
+    ]
+  },
+  "mixins": [
+    "item_landing_sound_refabricated.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "fabric-api": ">=0.161.0+26.3",
+    "minecraft": "~26.3",
+    "java": ">=25"
+  }
+}
