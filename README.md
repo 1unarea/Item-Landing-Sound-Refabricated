@@ -70,7 +70,7 @@ The configuration file is located at `config/item_landing_sound_refabricated.jso
 ### Build Instructions
 ```bash
 # Clone the repository
-git clone https://github.com/aegeada/Item-Landing-Sound-Refabricated.git
+git clone https://github.com/1unarea/Item-Landing-Sound-Refabricated.git
 cd Item-Landing-Sound-Refabricated
 
 # Build the mod JAR
