@@ -122,7 +122,7 @@ The compiled mod JAR will be generated in `build/libs/item_landing_sound_refabri
 
 The codebase includes an automated JUnit 5 test suite covering:
 - Ground impact state transitions and sliding suppression.
-- Reflection and bytecode audit confirming 0 static tracking collections.
+- Reflection tests confirming 0 static tracking collections.
 - GC reclamation tests verifying that tracking state is reclaimed with the entity.
 - Property-based fuzz testing across 50,000 random physics frames.
 - Config manager serialization, atomic moves, thread safety, and corruption recovery.

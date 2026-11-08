@@ -320,11 +320,11 @@ public class ImpactDetectionLogicTest {
     }
 
     @Nested
-    @DisplayName("Adversarial & Invariant Stress Testing")
-    class AdversarialStressTests {
+    @DisplayName("Boundary & Invariant Stress Testing")
+    class BoundaryStressTests {
 
         @Test
-        @DisplayName("Adversarial IEEE 754: NaN and Infinity velocity handling")
+        @DisplayName("IEEE 754: NaN and Infinity velocity handling")
         void testNaNAndInfinityHandling() {
             // NaN velocity: Double.NaN < -0.04 is false by IEEE 754 spec -> should not fire
             ItemEntityPhysicsSimulator nanItem = new ItemEntityPhysicsSimulator();
@@ -347,7 +347,7 @@ public class ImpactDetectionLogicTest {
         }
 
         @Test
-        @DisplayName("Adversarial Terminal Velocity: Fall from build limit (y=320 to y=-64, vy=-3.92)")
+        @DisplayName("Terminal Velocity: Fall from build limit (y=320 to y=-64, vy=-3.92)")
         void testTerminalVelocityImpact() {
             ItemEntityPhysicsSimulator item = new ItemEntityPhysicsSimulator();
 
@@ -417,13 +417,13 @@ public class ImpactDetectionLogicTest {
     }
 
     @Nested
-    @DisplayName("Memory Management & Zero Unbounded Collections Audit")
+    @DisplayName("Memory Management & Zero Unbounded Collections Tests")
     class MemoryManagementTests {
 
         @Test
-        @DisplayName("Bytecode & Reflection Audit: No static Maps, Lists, Sets, or unbounded collections exist")
-        void testAuditNoStaticUnboundedCollections() throws ClassNotFoundException {
-            List<String> classesToAudit = List.of(
+        @DisplayName("Reflection: No static Maps, Lists, Sets, or unbounded collections exist")
+        void testNoStaticUnboundedCollections() throws ClassNotFoundException {
+            List<String> classesToVerify = List.of(
                     "org.refabricated.itemlandingsound.ItemLandingSoundClient",
                     "org.refabricated.itemlandingsound.duck.ItemLandingTracker",
                     "org.refabricated.itemlandingsound.mixin.ItemEntityMixin",
@@ -434,7 +434,7 @@ public class ImpactDetectionLogicTest {
             );
 
             ClassLoader loader = ImpactDetectionLogicTest.class.getClassLoader();
-            for (String className : classesToAudit) {
+            for (String className : classesToVerify) {
                 // Load class without executing <clinit> to inspect declarations cleanly
                 Class<?> clazz = Class.forName(className, false, loader);
                 for (Field field : clazz.getDeclaredFields()) {

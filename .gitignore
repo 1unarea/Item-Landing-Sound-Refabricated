@@ -38,8 +38,5 @@ crash-reports/
 *.tmp
 *.bak
 
-# Agent Metadata & Workspace
-.agents/
-
 # Local publishing documentation (hidden from repository)
 docs/
